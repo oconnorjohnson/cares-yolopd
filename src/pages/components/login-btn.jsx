@@ -7,7 +7,7 @@ const LoginLogoutButton = () => {
     if (session) {
         return (
             <Container justify="center" align="center">
-                <Button auto onClick={() => signOut()}>
+                <Button bordered color="primary" auto onClick={() => signOut()}>
                     Log Out 
                 </Button>
             </Container>
@@ -16,7 +16,7 @@ const LoginLogoutButton = () => {
 
     return (
         <Container justify="center" align="center">
-            <Button auto onClick={() => signIn()}>
+            <Button bordered color="primary" auto onClick={() => signIn()}>
                 Log In
             </Button>
         </Container>
@@ -26,20 +26,3 @@ const LoginLogoutButton = () => {
 export default LoginLogoutButton;
 
 
-// export default function Component() {
-//   const { data: session } = useSession()
-//   if (session) {
-//     return (
-//       <>
-//         Signed in as {session.user.email} <br />
-//         <button onClick={() => signOut()}>Sign out</button>
-//       </>
-//     )
-//   }
-//   return (
-//     <>
-//       Not signed in <br />
-//       <button onClick={() => signIn()}>Sign in</button>
-//     </>
-//   )
-// }
